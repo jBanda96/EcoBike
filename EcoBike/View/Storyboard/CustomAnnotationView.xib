@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StationDetailMapView" customModule="EcoBike" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicicleta" translatesAutoresizingMaskIntoConstraints="NO" id="BQd-aC-Ecq">
+                    <rect key="frame" x="36" y="8" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="3ff-4N-2iN"/>
+                        <constraint firstAttribute="height" constant="48" id="EsY-bV-Ba5"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estacionamiento" translatesAutoresizingMaskIntoConstraints="NO" id="9Xb-tH-cZ1">
+                    <rect key="frame" x="196" y="8" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="V67-ff-r7d"/>
+                        <constraint firstAttribute="height" constant="48" id="cZH-jC-zUs"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rio Gualdalquivir - Rio Balsas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="deV-Yh-Ecc">
+                    <rect key="frame" x="8" y="64" width="264" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 estaciones cercanas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhu-8f-Fci">
+                    <rect key="frame" x="54.5" y="92.5" width="171" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Vb3-QY-dyM">
+                    <rect key="frame" x="92" y="17" width="96" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trg-r2-aV3">
+                            <rect key="frame" x="0.0" y="0.0" width="27" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKF-bd-Amg">
+                            <rect key="frame" x="50" y="0.0" width="8" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="8" id="krO-5M-21D"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE6-MY-q2f">
+                            <rect key="frame" x="81" y="0.0" width="15" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vb3-QY-dyM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0VW-lT-LbM"/>
+                <constraint firstItem="9Xb-tH-cZ1" firstAttribute="leading" secondItem="Vb3-QY-dyM" secondAttribute="trailing" constant="8" id="6q8-H5-Uxw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="deV-Yh-Ecc" secondAttribute="trailing" constant="8" id="Eep-h0-tXq"/>
+                <constraint firstItem="BQd-aC-Ecq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="H4a-lX-QFP"/>
+                <constraint firstItem="Qhu-8f-Fci" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LLA-Ic-g24"/>
+                <constraint firstItem="Qhu-8f-Fci" firstAttribute="top" secondItem="deV-Yh-Ecc" secondAttribute="bottom" constant="8" id="Par-2F-NHe"/>
+                <constraint firstItem="9Xb-tH-cZ1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="i2b-DK-dQj"/>
+                <constraint firstItem="Vb3-QY-dyM" firstAttribute="leading" secondItem="BQd-aC-Ecq" secondAttribute="trailing" constant="8" id="iPa-un-hqp"/>
+                <constraint firstItem="Vb3-QY-dyM" firstAttribute="centerY" secondItem="BQd-aC-Ecq" secondAttribute="centerY" id="n2n-pO-IrM"/>
+                <constraint firstItem="deV-Yh-Ecc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="osh-bg-xmc"/>
+                <constraint firstItem="deV-Yh-Ecc" firstAttribute="top" secondItem="BQd-aC-Ecq" secondAttribute="bottom" constant="8" id="y6j-nV-PpR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="address" destination="deV-Yh-Ecc" id="DZV-Aa-42J"/>
+                <outlet property="bikes" destination="Trg-r2-aV3" id="zlO-zo-vD3"/>
+                <outlet property="nearStations" destination="Qhu-8f-Fci" id="cCn-Nm-W5l"/>
+                <outlet property="slots" destination="WE6-MY-q2f" id="EQn-GB-6qC"/>
+            </connections>
+            <point key="canvasLocation" x="60.799999999999997" y="-91.754122938530742"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bicicleta" width="380" height="380"/>
+        <image name="estacionamiento" width="405.09890747070312" height="405.09890747070312"/>
+    </resources>
+</document>

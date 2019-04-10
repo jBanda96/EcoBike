@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A4FA5D0225D15FA0062980D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FA5CF225D15FA0062980D /* Constants.swift */; };
+		2A4FA5D2225D16BC0062980D /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FA5D1225D16BC0062980D /* StationDetailViewController.swift */; };
+		2A4FA5D9225D547F0062980D /* CustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4FA5D8225D547F0062980D /* CustomAnnotationView.xib */; };
+		2A4FA5DB225D59D70062980D /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FA5DA225D59D70062980D /* CustomAnnotationView.swift */; };
+		2A9C57EC225CF2B600E1F9FF /* AvailabilityPerStation.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C57EB225CF2B600E1F9FF /* AvailabilityPerStation.json */; };
+		2A9C57F6225CF49000E1F9FF /* EcoBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C57F5225CF49000E1F9FF /* EcoBikeTests.swift */; };
+		2A9C57FF225CF8BE00E1F9FF /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C57FE225CF8BE00E1F9FF /* Networking.swift */; };
+		2AF95FD3225C4009000B27F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF95FD2225C4009000B27F9 /* AppDelegate.swift */; };
+		2AF95FDA225C400A000B27F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF95FD9225C400A000B27F9 /* Assets.xcassets */; };
+		2AF95FDD225C400A000B27F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF95FDB225C400A000B27F9 /* LaunchScreen.storyboard */; };
+		2AF95FEA225C4254000B27F9 /* Bikes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF95FE9225C4254000B27F9 /* Bikes.storyboard */; };
+		2AF95FEC225C4299000B27F9 /* BikesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF95FEB225C4299000B27F9 /* BikesTableViewController.swift */; };
+		2AF95FEF225C47C0000B27F9 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF95FEE225C47C0000B27F9 /* Station.swift */; };
+		2AF95FF7225C4CAD000B27F9 /* MainCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF95FF6225C4CAD000B27F9 /* MainCellTableViewCell.swift */; };
+		2AF95FF9225C4DBC000B27F9 /* BikesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF95FF8225C4DBC000B27F9 /* BikesTableViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A9C57F8225CF49000E1F9FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AF95FC7225C4009000B27F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AF95FCE225C4009000B27F9;
+			remoteInfo = EcoBike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A4FA5CF225D15FA0062980D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2A4FA5D1225D16BC0062980D /* StationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewController.swift; sourceTree = "<group>"; };
+		2A4FA5D8225D547F0062980D /* CustomAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAnnotationView.xib; sourceTree = "<group>"; };
+		2A4FA5DA225D59D70062980D /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		2A9C57EB225CF2B600E1F9FF /* AvailabilityPerStation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AvailabilityPerStation.json; sourceTree = "<group>"; };
+		2A9C57F3225CF49000E1F9FF /* EcoBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9C57F5225CF49000E1F9FF /* EcoBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoBikeTests.swift; sourceTree = "<group>"; };
+		2A9C57F7225CF49000E1F9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A9C57FE225CF8BE00E1F9FF /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		2AF6ED96225DA4E3008ADF62 /* ParqueHundido.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ParqueHundido.gpx; sourceTree = "<group>"; };
+		2AF95FCF225C4009000B27F9 /* EcoBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF95FD2225C4009000B27F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AF95FD9225C400A000B27F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AF95FDC225C400A000B27F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AF95FDE225C400A000B27F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF95FE9225C4254000B27F9 /* Bikes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bikes.storyboard; sourceTree = "<group>"; };
+		2AF95FEB225C4299000B27F9 /* BikesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesTableViewController.swift; sourceTree = "<group>"; };
+		2AF95FEE225C47C0000B27F9 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		2AF95FF6225C4CAD000B27F9 /* MainCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellTableViewCell.swift; sourceTree = "<group>"; };
+		2AF95FF8225C4DBC000B27F9 /* BikesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesTableViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A9C57F0225CF49000E1F9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF95FCC225C4009000B27F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A4FA5D5225D2B130062980D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A9C57EA225CF2A000E1F9FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C57EB225CF2B600E1F9FF /* AvailabilityPerStation.json */,
+				2A4FA5CF225D15FA0062980D /* Constants.swift */,
+				2AF95FD9225C400A000B27F9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A9C57F4225CF49000E1F9FF /* EcoBikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C57F5225CF49000E1F9FF /* EcoBikeTests.swift */,
+				2A9C57F7225CF49000E1F9FF /* Info.plist */,
+			);
+			path = EcoBikeTests;
+			sourceTree = "<group>";
+		};
+		2A9C57FD225CF8AB00E1F9FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C57FE225CF8BE00E1F9FF /* Networking.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2AF95FC6225C4009000B27F9 = {
+			isa = PBXGroup;
+			children = (
+				2AF6ED96225DA4E3008ADF62 /* ParqueHundido.gpx */,
+				2AF95FD1225C4009000B27F9 /* EcoBike */,
+				2A9C57F4225CF49000E1F9FF /* EcoBikeTests */,
+				2AF95FD0225C4009000B27F9 /* Products */,
+				2A4FA5D5225D2B130062980D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AF95FD0225C4009000B27F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FCF225C4009000B27F9 /* EcoBike.app */,
+				2A9C57F3225CF49000E1F9FF /* EcoBikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AF95FD1225C4009000B27F9 /* EcoBike */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FD2225C4009000B27F9 /* AppDelegate.swift */,
+				2AF95FE4225C41F1000B27F9 /* Model */,
+				2AF95FE5225C41F7000B27F9 /* View */,
+				2AF95FE6225C41FC000B27F9 /* ViewModel */,
+				2A9C57FD225CF8AB00E1F9FF /* Services */,
+				2A9C57EA225CF2A000E1F9FF /* Resources */,
+				2AF95FDB225C400A000B27F9 /* LaunchScreen.storyboard */,
+				2AF95FDE225C400A000B27F9 /* Info.plist */,
+			);
+			path = EcoBike;
+			sourceTree = "<group>";
+		};
+		2AF95FE4225C41F1000B27F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FEE225C47C0000B27F9 /* Station.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AF95FE5225C41F7000B27F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FE8225C423C000B27F9 /* Controller */,
+				2AF95FE7225C4235000B27F9 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AF95FE6225C41FC000B27F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FF8225C4DBC000B27F9 /* BikesTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AF95FE7225C4235000B27F9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FE9225C4254000B27F9 /* Bikes.storyboard */,
+				2A4FA5D8225D547F0062980D /* CustomAnnotationView.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2AF95FE8225C423C000B27F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AF95FEB225C4299000B27F9 /* BikesTableViewController.swift */,
+				2AF95FF6225C4CAD000B27F9 /* MainCellTableViewCell.swift */,
+				2A4FA5D1225D16BC0062980D /* StationDetailViewController.swift */,
+				2A4FA5DA225D59D70062980D /* CustomAnnotationView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A9C57F2225CF49000E1F9FF /* EcoBikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A9C57FA225CF49000E1F9FF /* Build configuration list for PBXNativeTarget "EcoBikeTests" */;
+			buildPhases = (
+				2A9C57EF225CF49000E1F9FF /* Sources */,
+				2A9C57F0225CF49000E1F9FF /* Frameworks */,
+				2A9C57F1225CF49000E1F9FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A9C57F9225CF49000E1F9FF /* PBXTargetDependency */,
+			);
+			name = EcoBikeTests;
+			productName = EcoBikeTests;
+			productReference = 2A9C57F3225CF49000E1F9FF /* EcoBikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AF95FCE225C4009000B27F9 /* EcoBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF95FE1225C400A000B27F9 /* Build configuration list for PBXNativeTarget "EcoBike" */;
+			buildPhases = (
+				2AF95FCB225C4009000B27F9 /* Sources */,
+				2AF95FCC225C4009000B27F9 /* Frameworks */,
+				2AF95FCD225C4009000B27F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcoBike;
+			productName = EcoBike;
+			productReference = 2AF95FCF225C4009000B27F9 /* EcoBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AF95FC7225C4009000B27F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = julio.banda;
+				TargetAttributes = {
+					2A9C57F2225CF49000E1F9FF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2AF95FCE225C4009000B27F9;
+					};
+					2AF95FCE225C4009000B27F9 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2AF95FCA225C4009000B27F9 /* Build configuration list for PBXProject "EcoBike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AF95FC6225C4009000B27F9;
+			productRefGroup = 2AF95FD0225C4009000B27F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AF95FCE225C4009000B27F9 /* EcoBike */,
+				2A9C57F2225CF49000E1F9FF /* EcoBikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A9C57F1225CF49000E1F9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF95FCD225C4009000B27F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF95FDD225C400A000B27F9 /* LaunchScreen.storyboard in Resources */,
+				2AF95FEA225C4254000B27F9 /* Bikes.storyboard in Resources */,
+				2A4FA5D9225D547F0062980D /* CustomAnnotationView.xib in Resources */,
+				2AF95FDA225C400A000B27F9 /* Assets.xcassets in Resources */,
+				2A9C57EC225CF2B600E1F9FF /* AvailabilityPerStation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A9C57EF225CF49000E1F9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C57F6225CF49000E1F9FF /* EcoBikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF95FCB225C4009000B27F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4FA5D2225D16BC0062980D /* StationDetailViewController.swift in Sources */,
+				2AF95FF7225C4CAD000B27F9 /* MainCellTableViewCell.swift in Sources */,
+				2AF95FEC225C4299000B27F9 /* BikesTableViewController.swift in Sources */,
+				2AF95FEF225C47C0000B27F9 /* Station.swift in Sources */,
+				2A9C57FF225CF8BE00E1F9FF /* Networking.swift in Sources */,
+				2A4FA5D0225D15FA0062980D /* Constants.swift in Sources */,
+				2A4FA5DB225D59D70062980D /* CustomAnnotationView.swift in Sources */,
+				2AF95FF9225C4DBC000B27F9 /* BikesTableViewModel.swift in Sources */,
+				2AF95FD3225C4009000B27F9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A9C57F9225CF49000E1F9FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AF95FCE225C4009000B27F9 /* EcoBike */;
+			targetProxy = 2A9C57F8225CF49000E1F9FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AF95FDB225C400A000B27F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AF95FDC225C400A000B27F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A9C57FB225CF49000E1F9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UUW8LTC64;
+				INFOPLIST_FILE = EcoBikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.julio.EcoBikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EcoBike.app/EcoBike";
+			};
+			name = Debug;
+		};
+		2A9C57FC225CF49000E1F9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UUW8LTC64;
+				INFOPLIST_FILE = EcoBikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.julio.EcoBikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EcoBike.app/EcoBike";
+			};
+			name = Release;
+		};
+		2AF95FDF225C400A000B27F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AF95FE0225C400A000B27F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AF95FE2225C400A000B27F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QRH5T43Y6;
+				INFOPLIST_FILE = EcoBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.julio.EcoBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2AF95FE3225C400A000B27F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QRH5T43Y6;
+				INFOPLIST_FILE = EcoBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.julio.EcoBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A9C57FA225CF49000E1F9FF /* Build configuration list for PBXNativeTarget "EcoBikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9C57FB225CF49000E1F9FF /* Debug */,
+				2A9C57FC225CF49000E1F9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AF95FCA225C4009000B27F9 /* Build configuration list for PBXProject "EcoBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF95FDF225C400A000B27F9 /* Debug */,
+				2AF95FE0225C400A000B27F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AF95FE1225C400A000B27F9 /* Build configuration list for PBXNativeTarget "EcoBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF95FE2225C400A000B27F9 /* Debug */,
+				2AF95FE3225C400A000B27F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AF95FC7225C4009000B27F9 /* Project object */;
+}
